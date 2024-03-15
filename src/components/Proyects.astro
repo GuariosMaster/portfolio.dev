@@ -2,6 +2,9 @@
 
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
+import NestJS from "./icons/NestJS.astro"
+import Postgres from "./icons/Postgres.astro"
+import Swagger from "./icons/Swagger.astro"
 
 const TAGS = {
     NEXT: {
@@ -14,17 +17,32 @@ const TAGS = {
         class: "bg-[#003159] text-white",
         icon: Tailwind,
     },
+    NESTJS: {
+        name: "Nest.js",
+        class: "bg-[#003159] text-white",
+        icon: NestJS,
+    },
+    POSTGRES: {
+        name: "PostgreSQL",
+        class: "bg-[#003159] text-white",
+        icon: Postgres,
+    },
+    SWAGGER: {
+        name: "Swagger",
+        class: "bg-[#003159] text-white",
+        icon: Swagger,
+    },
 };
 
 const PROYECTS = [
     {
-        title: "Proyect 1",
+        title: "API CATS",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae diam",
-        link: "https://tabler.io/",
+            "Our API, developed using Nest.js, offers a robust and efficient solution for handling various tasks within our application ecosystem. Leveraging the power and flexibility of Nest.js, we've created a modular and scalable API architecture that caters to our specific business needs while ensuring maintainability and extensibility.",
+        link: "https://catsapirest.onrender.com/docs",
         github: "https://github.com/GuariosMaster",
-        image: "/projects/imagen1.webp",
-        tags: [TAGS.NEXT, TAGS.TAILWIND],
+        image: "/projects/swagger.png",
+        tags: [TAGS.NESTJS, TAGS.POSTGRES, TAGS.SWAGGER],
     },
 ];
 ---
