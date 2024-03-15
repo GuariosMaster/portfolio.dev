@@ -48,9 +48,11 @@ const PROYECTS = [
 ---
 
 {
-    PROYECTS.map(({ image, title, description, tags }) => (
+    PROYECTS.map(({ image, title, link, description, tags }) => (
         <article>
-            <h3 class="text-2xl font-semibold text-blue-400 mb-2">{title}</h3>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+                <h3 class="text-2xl font-semibold text-blue-400 mb-2">{title}</h3>
+            </a>
             <p class="text-lg mb-4 text-pretty">{description}</p>
             <ul class="flex gap-x-2 flex-row mb-2">
                 {tags.map((tag) => (
